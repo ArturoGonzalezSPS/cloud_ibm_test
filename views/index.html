@@ -37,14 +37,14 @@
     function test() {
         $.ajax({
                 method: "POST",
-                url: "https://testspsfoto.mybluemix.net/api/test",
+                url: "https://dev1775-frontfotografia.mybluemix.net/api/test",
                 contentType: "application/json",
             })
             .done(function (data) {
                 console.log('data POST', data)
             });
 
-        $.get("https://testspsfoto.mybluemix.net/api/test").done((data) => {
+        $.get("https://dev1775-frontfotografia.mybluemix.net/api/test").done((data) => {
             console.log('data GET', data)
         })
     }
